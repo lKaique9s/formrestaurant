@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante reservas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Reserve uma mesa no nosso restaurante!</h3>
+        </div>
+        <div class="form-container">
+            <div class="form-header">
+                <p>Formulário</p>
+            </div>
+            <div class="form-body">
+                <h1 class="form-title">Reserve uma mesa fácil aqui!</h1>
+                <form>
+                        <div class="box-input">
+                            <label for="first-name">Nome: <span class="required-field">*</span></label>
+                            <input type="text" id="first-name" name="first-name" class="block" placeholder="Qual o seu primeiro nome?" minlength="2" maxlength="10" required>                          
+                        </div>
+                        <div class="box-input">
+                            <label for="last-name">Sobrenome: <span class="required-field">*</span></label>
+                            <input type="text" id="last-name" name="last-name" class="block" placeholder="Qual o seu sobrenome?" minlength="2" maxlength="10" required>                          
+                        </div>
+                        <div class="box-input">
+                            <label for="email">Email: <span class="required-field">*</span></label>
+                            <input type="email" id="email" name="email" class="block" placeholder="Seu e-mail para confirmação" minlength="2" required>                          
+                        </div>
+                        <div class="box-input">
+                            <label for="phone">Telefone: <span class="required-field">*</span></label>
+                            <input type="tel" id="phone" name="phone" class="block" placeholder="Digite seu telefone: (XX)9XXXX-XXXX" required>                          
+                        </div>
+                        <div class="box-input">
+                            <label for="date">Data da Reserva: <span class="required-field">*</span></label>
+                            <input type="date" id="date" name="date" class="block" required>                          
+                        </div>
+                        <div class="box-input">
+                            <label for="time">Hora da Reserva: <span class="required-field">*</span></label>
+                            <input type="time" id="time" name="time" class="block" required>                          
+                        </div>
+                        <div class="box-input">
+                            <label for="qntd-pessoas">Quantos lugares? <span class="required-field">*</span></label>
+                            <input type="number" id="qntd-pessoas" name="qntd-pessoas" class="block" placeholder="Quantas pessoas vai participar?" required>                          
+                        </div>
+                        <div class="box-input">
+                            <label for="obs">Alguma observação</label>
+                            <textarea name="obs" id="obs" class="block" placeholder="Digite suas observações aqui"></textarea>                        
+                        </div>
+                        <div class="box-input">
+                            <p>Tipo De mesa: <span class="required-field">*</span></p>
+                            <input type="radio" id="externo" name="mesa">
+                            <label for="externo">Exterior:</label>
+                            <input type="radio" id="interno" name="mesa">
+                            <label for="interno">Interior:</label>                                                 
+                        </div>
+                        <div class="optional-box">
+                            <p>Opcionais</p>
+                            <ul class="optional-list">
+                                <li>
+                                    <input type="checkbox" id="vegan" name="optional[]"
+                                    value="vegan">
+                                    <label for="vegan">Vegano</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="vegetariano" name="optional[]"
+                                    value="vegetariano">
+                                    <label for="vegetariano">Vegetariano</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pepper" name="optional[]"
+                                    value="pepper">
+                                    <label for="pepper">Sem pimenta</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="optional-box">
+                            <ul class="optional-list">
+                                <li>
+                                    <input type="checkbox" id="sugar" name="optional[]"
+                                    value="sugar">
+                                    <label for="sugar">Sem açúcar</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="gluten" name="optional[]"
+                                    value="gluten">
+                                    <label for="gluten">Sem glúten</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box-input">
+                            <p>Pagamento da reserva: <span class="required-field">*</span></p>
+                            <input type="file" accept="image/png, image/jpg" name="payment" id="payment">                      
+                        </div>
+                    <input type="submit" value="Enviar" class="btn-submit">
+                    <input type="reset" value="Limpar" class="btn-submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
